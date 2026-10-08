@@ -1,0 +1,7 @@
+#Conditional statements and loops
+emmanuel_score=60
+if emmanuel_score>=60:
+  print("pass")
+else:
+  print("fail")
+  
