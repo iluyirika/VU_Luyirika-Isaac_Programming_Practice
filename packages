@@ -1,0 +1,15 @@
+# file: shapes.py
+def area_circle(r):
+    return 3.14 * r * r
+
+# file: text_tools.py
+def shout(text):
+    return text.upper() + "!"
+
+# file: main.py
+from my_package import shapes, text_tools
+
+print(shapes.area_circle(3))
+print(text_tools.shout("hello"))
+>> 28.26
+>> HELLO!
