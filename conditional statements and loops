@@ -5,3 +5,47 @@ if emmanuel_score>=60:
 else:
   print("fail")
   
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+class Square:
+    def __init__(self, side):
+        self.side = side
+
+    def area(self):
+        return self.side ** 2
+
+shapes = [Circle(4), Square(5)]
+for shape in shapes:
+    print(shape.area())
+
+
+# file: shapes.py
+def area_circle(radius):
+    return 3.14 * radius * radius
+
+# file: script1.py
+import shapes
+
+result = shapes.area_circle(5)
+print(result)
+
+class Cat:
+    def speak(self):
+        print("Meow")
+
+class Dog:
+    def speak(self):
+        print("Woof")
+
+class Cow:
+    def speak(self):
+        print("moo")
+
+animals = [Cat(), Dog(), Cow()]
+for a in animals:
+    a.speak()
