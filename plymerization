@@ -1,0 +1,16 @@
+# file: sounds.py
+class Cat:
+    def speak(self):
+        print("Meow")
+
+class Dog:
+    def speak(self):
+        print("Woof")
+
+animals = [Cat(), Dog()]
+for a in animals:
+    a.speak()
+    # same call, different result
+
+>> Meow
+>> Woof
